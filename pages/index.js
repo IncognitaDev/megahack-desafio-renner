@@ -11,7 +11,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Clude Fidelidade <a href="https://www.lojasrenner.com.br/">Renner!</a>
+          Clube Fidelidade <a href="https://www.lojasrenner.com.br/">Renner!</a>
         </h1>
 
         <p className={styles.description}>
