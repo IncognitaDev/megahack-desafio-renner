@@ -2,10 +2,9 @@ import styled from 'styled-components';
 import media from 'styled-media-query'
 
 export const CardWrapper = styled.div`
-  max-width: 600px;
+  width: 600px;
   height: 450px;
   background-color: var(--primary);
-  border-radius: 8px;
   padding: 40px;
 
   display: flex;
@@ -20,6 +19,7 @@ export const CardWrapper = styled.div`
       top: 0;
       left: 0;
       bottom: 0;
+      right: 0;
       width: 100vw;
       border-radius: 0;
 
@@ -52,4 +52,19 @@ export const ImgBox = styled.img`
   ${media.lessThan('small')`
     width: 100%; 
   `}
+`
+
+export const Button = styled.button`
+  position: absolute;
+  display: block;
+  bottom: 80px;
+  right: 50px;
+  width: 100px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  border: 0;
+  padding: 5px 10px;
+  font-size: 20px;
+  cursor: pointer;
 `
