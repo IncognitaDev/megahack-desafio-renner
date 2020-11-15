@@ -11,7 +11,7 @@ export const CardWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  ${media.lessThan('small')`
+  ${media.lessThan('630px')`
       flex-direction: column;
 
       position: absolute;
@@ -19,7 +19,6 @@ export const CardWrapper = styled.div`
       top: 0;
       left: 0;
       bottom: 0;
-      right: 0;
       width: 100vw;
       border-radius: 0;
 
@@ -34,11 +33,12 @@ export const TextBox = styled.div`
   flex: 1;
   margin-left: 30px;
 
-  ${media.lessThan('small')`
+  ${media.lessThan('630px')`
       
      margin-left: 0;
      flex: 0;
      margin-top: 30px;
+      max-width: 300px;
 
      h2 {
        text-align: center;
@@ -49,9 +49,11 @@ export const TextBox = styled.div`
 export const ImgBox = styled.img`
   width: 50%;
 
-  ${media.lessThan('small')`
-    width: 100%; 
+  ${media.lessThan('630px')`
+     width: 100%;
+    max-width: 400px; 
   `}
+
 `
 
 export const Button = styled.button`

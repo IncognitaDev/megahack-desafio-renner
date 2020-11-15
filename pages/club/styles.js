@@ -5,13 +5,14 @@ import AwesomeSlider from 'react-awesome-slider'
 import 'react-awesome-slider/dist/styles.css'
 
 export const Slider = styled(AwesomeSlider)`
+  height: 450px;
+  width: 600px;
  
   .awssld__content { 
     background-color: #fff;
-
     div {
       border-radius: 10px;
-      ${media.lessThan('small')`
+      ${media.lessThan('630px')`
         border-radius: 0;
       `}
     }
@@ -20,9 +21,17 @@ export const Slider = styled(AwesomeSlider)`
   .awssld__bullets  {
     bottom: 30px;
     z-index: 2;
+
+    button {
+      border: 1px white solid;
+      background-color: rgba(0,0,0,0);
+    }
+    .awssld__bullets--active{
+      background-color: white;
+    }
   }
 
-  ${media.lessThan('small')`
+  ${media.lessThan('630px')`
       flex-direction: column;
 
       position: absolute;

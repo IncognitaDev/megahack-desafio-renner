@@ -28,9 +28,10 @@ export default function Club() {
             </div>
               
           ))}
-
           </Slider>
-            
+
+
+          
       </div>
       
     </div>
