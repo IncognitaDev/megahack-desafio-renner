@@ -43,7 +43,7 @@ export const Button = styled.a`
   font-weight: bold;
   cursor: pointer;
 
-  ${media.lessThan('small')`
+  ${media.lessThan('660px')`
     padding: 8px 10px;
   `}
 
