@@ -34,3 +34,17 @@ export const Logo = styled.img`
   `}
 
 ` 
+
+export const Button = styled.a`
+  padding: 1em 3em;
+  color: var(--primary);
+  background-color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+
+  ${media.lessThan('small')`
+      display: none ;
+  `}
+
+` 
