@@ -1,5 +1,5 @@
-import { HeaderWrapper, UserImage, Logo } from './styles'
-
+import { HeaderWrapper, UserImage, Logo,Button } from './styles'
+import Link from 'next/link';
 
 export default function Header() {
 
@@ -8,7 +8,11 @@ export default function Header() {
 
       <Logo src='/renner-logo.svg' alt=""/>
 
-      <UserImage/>
+      <Link href='/club'>
+        <Button>Clube de fidelidade</Button>
+      </Link>
+      
+      {/* <UserImage/> */}
       
     </HeaderWrapper>
   );
