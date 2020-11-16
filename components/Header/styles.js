@@ -44,7 +44,7 @@ export const Button = styled.a`
   cursor: pointer;
 
   ${media.lessThan('small')`
-     // display: none ;
+    padding: 8px 10px;
   `}
 
 ` 
