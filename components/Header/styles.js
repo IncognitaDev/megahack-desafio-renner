@@ -30,7 +30,7 @@ export const Logo = styled.img`
   height: 180px;
 
   ${media.lessThan('small')`
-      display: none ;
+     height: 100px;
   `}
 
 ` 
@@ -44,7 +44,7 @@ export const Button = styled.a`
   cursor: pointer;
 
   ${media.lessThan('small')`
-      display: none ;
+     // display: none ;
   `}
 
 ` 
