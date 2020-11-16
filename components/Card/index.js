@@ -13,7 +13,7 @@ export default function Card(props) {
             <p>{props.description}</p>
           </TextBox>
           {props.button == true && (
-            <Link href='/'>
+            <Link href='/club/sign'>
             <Button>Assinar</Button>
             </Link>
              
