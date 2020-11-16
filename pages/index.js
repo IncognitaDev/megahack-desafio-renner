@@ -5,7 +5,7 @@ import Header from '../components/Header'
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Header/>
+      <Header button/>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
@@ -13,6 +13,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1>Tendências</h1>
+
         <div className={styles.slider}>
           <img className={styles.item} src='/option1.png' alt="Roupa Renner" />
           <img className={styles.item} src='/option2.png' alt="Roupa Renner" />
